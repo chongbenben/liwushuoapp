@@ -30,12 +30,14 @@
       </block>
   </swiper>
             <ul class="mainul">
-                    <li wx:for="{{list}}" wx:for-item="item">
+                    <li wx:for="{{list}}" wx:for-item="item"  data-id="{{item.id}}">
+                    <navigator url="/pages/liwushuo/good/good?id={{item.id}}">
                       <image src="{{item.img}}" mode="aspectFill"></image>
                       <b class="title">{{item.title}}</b>
                       <b class="xiangqing">{{item.xiangqing}}</b>
                       <span class="lanmu">栏目  {{item.lanmu}}</span>
                      <span class="guanzhu">♥ {{item.guanzhu}}</span>
+                     </navigator>
                     </li>
                   </ul>
   </scroll-view>
