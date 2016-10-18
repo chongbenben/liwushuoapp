@@ -1,0 +1,52 @@
+<view class="main-container">
+
+    <header>
+      <ul>
+          <li class="head-l">
+            <image src="/images/yq.png"  mode="scaleToFill"></image>
+          </li>
+          <li class="head-c">
+              <span class="btn">
+                <image src="/images/lo.png"  mode="scaleToFill"></image>
+              </span>
+              <input type="text" id="txt" placeholder="全网最低，搜你想要"/>
+          </li>
+          <li class="head-r">
+            <image src="/images/ys.png" mode="scaleToFill"></image>
+          </li>
+      </ul>
+    </header>
+    
+
+    <swiper class="main-list" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+            <swiper-item>
+              <image src="{{item}}" class="slide-image"/>
+            </swiper-item>
+        </block>
+    </swiper>
+
+
+
+
+    <!--<view class="list-loading">
+      <loading hidden="{{loadingHidden}}">努力加载中...</loading>
+    </view>
+
+    <swiper class="main-list" indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}" current="{{current}}" bindchange="changeSlider">
+        <block>
+            <view hidden="{{refreshHidden}}">
+              <button plain="true" loading="true">努力刷新中...</button>
+            </view>
+            <ul>
+              <li wx:for="{{list}}" wx:for-item="item">
+                <image src="{{item.img}}" mode="aspectFill"></image>
+                <b>{{item.title}}</b>
+              </li>
+            </ul>
+            <view hidden="{{loadmoreHidden}}">
+              <button plain="true" loading="true">努力加载中...</button>
+            </view>
+        </block>
+    </swiper>-->
+</view>
