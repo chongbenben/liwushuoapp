@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/liwushuo/main/main",
     "pages/index/index",
+    "pages/liwushuo/main/main",
     "pages/liwushuo/bangdan/bangdan",
     "pages/liwushuo/fenlei/fenlei",
     "pages/liwushuo/wode/wode",

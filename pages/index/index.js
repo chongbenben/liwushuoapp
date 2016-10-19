@@ -11,6 +11,6 @@ Page({
 			wx.navigateTo({
 				url: '../liwushuo/main/main'
 			})
-		}, 100);
+		}, 2500);
 	}
 })

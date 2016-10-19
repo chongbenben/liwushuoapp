@@ -36,6 +36,8 @@
 }
 
 .main-list ul li b {
+  font-size:12px;
+  color:rgb(219, 185, 197);
   display: block;
   padding: 4px;
 }
